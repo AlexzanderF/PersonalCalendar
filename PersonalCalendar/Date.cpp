@@ -97,7 +97,7 @@ char* Date::getString()
 		dayS[1] = (char)('0' + day % 10);
 	}
 
-	std::sprintf(retVal, "%u-%s-%s",
+	sprintf_s(retVal, 11, "%u-%s-%s",
 		year,
 		monthS,
 		dayS);
